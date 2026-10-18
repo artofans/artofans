@@ -21,7 +21,7 @@ section table{width:100%;border-collapse:collapse}
 section th,section td{padding:.45em .6em;text-align:left;vertical-align:top;border-bottom:1px solid #DDD6C8}
 section th{font-weight:700;border-bottom:2px solid #121110}
 section img{display:block}
-#bar{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;gap:16px;padding:10px;font:600 14px 'Public Sans',Arial,sans-serif;color:#C9C3B6;opacity:0;transition:opacity .3s}
+#bar{position:fixed;right:0;bottom:0;display:flex;align-items:center;justify-content:flex-end;gap:12px;padding:12px 16px;font:600 14px 'Public Sans',Arial,sans-serif;color:#C9C3B6;opacity:0;transition:opacity .3s}
 body:hover #bar,#bar:focus-within{opacity:1}
 #count{background:#1C1A17;padding:8px 14px;border-radius:16px}
 #bar button{width:44px;height:44px;border-radius:22px;border:1px solid #3A352F;background:#1C1A17;color:#F4F1EA;font-size:20px;cursor:pointer}
@@ -54,11 +54,11 @@ body:hover #bar,#bar:focus-within{opacity:1}
 </div>
 <div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:48px;border:1px solid #DDD6C8;border-radius:16px">
 <p style="font-family:'Oswald', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#121110">1,000</p>
-<p style="font-size:32px;line-height:1.35;color:#4A453D">Streams a track needs in a year before Spotify pays it anything at all.</p>
+<p style="font-size:32px;line-height:1.35;color:#4A453D">Streams are needed per song within a year before Spotify pays you anything.</p>
 </div>
 <div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:48px;border:1px solid #DDD6C8;border-radius:16px">
-<p style="font-family:'Oswald', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#121110">0</p>
-<p style="font-size:32px;line-height:1.35;color:#4A453D">Fan relationships the artist owns. The platform keeps the fans, the data and the money.</p>
+<p style="font-family:'Oswald', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#121110">Control</p>
+<p style="font-size:32px;line-height:1.35;color:#4A453D">The artist has very little control. The platform keeps your fans, your data and controls how much you get paid.</p>
 </div>
 </div>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B655B">Source: getmorestreams.com, 2026 Spotify payout averages ($0.003–$0.005 per stream)</p>
@@ -188,28 +188,30 @@ body:hover #bar,#bar:focus-within{opacity:1}
 </section>
 </div>
 <div class="frame" hidden>
-<section id="model" data-transition="fade" style="background:#F4F1EA;color:#121110;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:72px">
+<section id="model" data-transition="fade" style="background:#F4F1EA;color:#121110;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
 <div style="display:flex;flex-direction:column;gap:16px">
-<p style="font-size:28px;font-weight:700;letter-spacing:6px;text-transform:uppercase;color:#8A6410">Business model</p>
+<p style="font-size:28px;font-weight:700;letter-spacing:6px;text-transform:uppercase;color:#8A6410">Plans</p>
 <h2 style="font-family:'Oswald', Arial, sans-serif;font-size:88px;font-weight:600;line-height:1.05;text-transform:uppercase">Artists pay for the service, not a cut</h2>
 </div>
-<div style="display:flex;gap:32px">
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:48px;border:1px solid #DDD6C8;border-radius:16px">
-<p style="font-size:28px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#8A6410">Setup per album</p>
-<p style="font-family:'Oswald', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1">[$___]</p>
-<p style="font-size:28px;line-height:1.4;color:#4A453D">Page, domain, QR codes, flyers and live clip.</p>
+<div style="display:flex;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:44px;border:1px solid #DDD6C8;border-radius:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#8A6410">Gold</p>
+<p style="font-family:'Oswald', Arial, sans-serif;font-size:88px;font-weight:700;line-height:1">$19.99<span style="color:#6B655B">/mo</span></p>
+<p style="font-size:26px;line-height:1.4;color:#4A453D"><b>$9.99/mo for the first 3 months.</b></p>
+<p style="font-size:26px;line-height:1.4;color:#4A453D">Album page, own domain, QR codes, song and album sales.</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#FFFFFF;padding:48px;border:1px solid #DDD6C8;border-radius:16px">
-<p style="font-size:28px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#8A6410">Monthly</p>
-<p style="font-family:'Oswald', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1">[$___]</p>
-<p style="font-size:28px;line-height:1.4;color:#4A453D">Hosting, streaming, fan accounts and support.</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFFFF;padding:44px;border:1px solid #DDD6C8;border-radius:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#8A6410">Platinum</p>
+<p style="font-family:'Oswald', Arial, sans-serif;font-size:88px;font-weight:700;line-height:1">$24.99<span style="color:#6B655B">/mo</span></p>
+<p style="font-size:26px;line-height:1.4;color:#4A453D">Everything in Gold, plus <b>merch sales</b>.</p>
 </div>
-<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#121110;padding:48px;border-radius:16px">
-<p style="font-size:28px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#E8B33A">Artist keeps</p>
-<p style="font-family:'Oswald', Arial, sans-serif;font-size:96px;font-weight:700;line-height:1;color:#F4F1EA">100%</p>
-<p style="font-size:28px;line-height:1.4;color:#C9C3B6">Of every sale, minus card processing fees.</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#121110;padding:44px;border-radius:16px">
+<p style="font-size:28px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#E8B33A">Double Platinum</p>
+<p style="font-family:'Oswald', Arial, sans-serif;font-size:88px;font-weight:700;line-height:1;color:#F4F1EA">$29.99<span style="color:#A39B8F">/mo</span></p>
+<p style="font-size:26px;line-height:1.4;color:#C9C3B6">Everything in Platinum, plus <b style="color:#F4F1EA">ticket sales and show promotions</b>.</p>
 </div>
 </div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:28px;font-weight:700;color:#121110">Every plan: the artist keeps 100% of sales, minus card processing fees.</p>
 
 </section>
 </div>
